@@ -102,6 +102,10 @@
 		background-color: var(--color-gunmetal);
 	}
 
+	html[dir=ltr] ._3Qnsr {
+		left: 50px;
+	}
+
 	/* Sidebar Profile Photo */
 	html[dir] ._3GlyB {
 		width: 30px !important;
@@ -178,7 +182,6 @@
 		background: var(--color-charcoal);
 	}
 
-
 	/* Message In */
 	html[dir] .message-in .Nm1g1 {
 		background-color: var(--color-charcoal);
@@ -235,6 +238,16 @@
 	/* System Message */
 	html[dir] .EtBAv {
 		background-color: var(--color-charcoal);
+	}
+
+	/* Rich Text Emoji Panel */
+
+	html[dir] ._1TdPb, html[dir] ._10mnt, html[dir] ._16kef {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] ._2VSMU {
+		background-color: var(--color-gunmetal);
 	}
 
 	@media screen and (min-width: 768px) {

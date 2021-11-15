@@ -96,6 +96,12 @@
 		padding: 0 8px 0 6px;
 	}
 
+	/* Sidebar Search */
+
+	html[dir] ._1Jn3C {
+		background-color: var(--color-gunmetal);
+	}
+
 	/* Sidebar Profile Photo */
 	html[dir] ._3GlyB {
 		width: 30px !important;
@@ -122,7 +128,7 @@
 
 	/* Sidebar Time */
 	._1i_wG {
-		visibility: hidden;
+		opacity: 0.25;
 	}
 
 	/* Sidebar Transitions */

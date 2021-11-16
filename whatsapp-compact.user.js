@@ -142,13 +142,18 @@
 	.two ._191H_,
 	.two ._191H_ {
 		width: 100%;
-		max-width: 200px;
-		min-width: 200px;
+		max-width: 225px;
+		min-width: 225px;
 		flex: 2%;
 		transition: all 200ms ease-in-out;
 	}
 
 	/* Main Chat */
+	.two ._3sh5K {
+		flex: 100%;
+		padding-right: 30px;
+	}
+
 	[data-asset-chat-background-dark] {
 		background-image: none;
 		background-color: #282c34;
@@ -293,11 +298,6 @@
 
 		html * {
 			background: rgba(0, 0, 0, 0.5)
-		}
-
-		.two ._3sh5K {
-			flex: auto;
-			padding-right: 30px;
 		}
 	}
 }

@@ -9,7 +9,7 @@
 
 	:root {
 		--color-white: #fff;
-		--color-raisinblack: #1f2430;
+		--color-raisinblack: #232834;
 		--color-charcoal: #434957;
 		--color-gunmetal: #282c34;
 		--color-cyclamen: #f06897;
@@ -24,7 +24,7 @@
 
 	html,
 	body {
-		min-width: 640px;
+		min-width: 600px;
 	}
 
 	/* Scrollbar */
@@ -47,12 +47,7 @@
 	}
 
 	/* Global Backgrounds */
-	html[dir] ._20c87,
-	html[dir] ._2nY6U._2_TVt,
-	html[dir] ._2nY6U,
 	html[dir] ._23P3O,
-	html[dir] ._1G3Wr,
-	html[dir] .dark ._3yWey,
 	html[dir="ltr"] ._2BU3P,
 	html[dir] .zaKsw {
 		background-color: var(--color-raisinblack);
@@ -82,6 +77,15 @@
 	}
 
 	/* Sidebar */
+	/* Sidebar Background */
+	html[dir] ._2nY6U._2_TVt,
+	html[dir] ._2nY6U,
+	html[dir] ._2nY6U._1frFQ,
+	html[dir] ._1G3Wr,
+	html[dir] .dark ._3yWey {
+		background-color: var(--color-ebonyclay);
+	}
+
 	html[dir] body.dark #app {
 		opacity: 0.2;
 		opacity: 1;
@@ -97,9 +101,8 @@
 	}
 
 	/* Sidebar Search */
-
 	html[dir] ._1Jn3C {
-		background-color: var(--color-gunmetal);
+		background-color: var(--color-raisinblack);
 	}
 
 	html[dir=ltr] ._3Qnsr {
@@ -139,8 +142,8 @@
 	.two ._191H_,
 	.two ._191H_ {
 		width: 100%;
-		max-width: 225px;
-		min-width: 225px;
+		max-width: 200px;
+		min-width: 200px;
 		flex: 2%;
 		transition: all 200ms ease-in-out;
 	}
@@ -241,8 +244,9 @@
 	}
 
 	/* Rich Text Emoji Panel */
-
-	html[dir] ._1TdPb, html[dir] ._10mnt, html[dir] ._16kef {
+	html[dir] ._1TdPb,
+	html[dir] ._10mnt,
+	html[dir] ._16kef {
 		background-color: var(--color-raisinblack);
 	}
 
@@ -285,10 +289,15 @@
 	}
 
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 599px) {
 
 		html * {
 			background: rgba(0, 0, 0, 0.5)
+		}
+
+		.two ._3sh5K {
+			flex: auto;
+			padding-right: 30px;
 		}
 	}
 }

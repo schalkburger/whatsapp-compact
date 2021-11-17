@@ -173,7 +173,6 @@
 	}
 
 	/* Sidebar Unread Marker */
-
 	html[dir] ._23LrM {
 		background-color: var(--color-celeste);
 	}
@@ -266,7 +265,15 @@
 
 	/* Share Panel */
 	html[dir=ltr] ._1Mcu- {
-		background-color: var(--color-gunmetal);
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] ._2oWjT {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] ._2M4pc ._1VmmK {
+		background-color: var(--color-charcoal);
 	}
 
 	html[dir] ._1VmmK {
@@ -290,8 +297,8 @@
 	}
 
 	/* Group info Panel */
-
-	html[dir] ._2mQtw, html[dir] ._2P1rL {
+	html[dir] ._2mQtw,
+	html[dir] ._2P1rL {
 		background-color: var(--color-raisinblack);
 	}
 
@@ -306,6 +313,7 @@
 	html[dir] ._2QzJd {
 		background-color: var(--color-ebonyclay);
 	}
+
 
 	@media screen and (min-width: 768px) {
 		/* Sidebar */

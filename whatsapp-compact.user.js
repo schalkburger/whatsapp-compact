@@ -296,7 +296,7 @@
 		background-color: var(--color-gunmetal);
 	}
 
-	/* Group info Panel */
+	/* Group Info Panel */
 	html[dir] ._2mQtw,
 	html[dir] ._2P1rL {
 		background-color: var(--color-raisinblack);
@@ -312,6 +312,17 @@
 
 	html[dir] ._2QzJd {
 		background-color: var(--color-ebonyclay);
+	}
+
+	/* Group Media Panel */
+	html[dir] ._1PGhQ,
+	html[dir] ._3CC5A,
+	html[dir] ._1MulP {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] ._3CC5A:before {
+		background-color: var(--color-cyclamen);
 	}
 
 

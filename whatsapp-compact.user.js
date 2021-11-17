@@ -20,6 +20,7 @@
 		--color-lightskyblue: #73d0ff;
 		--color-frenchskyblue: #78a9ff;
 		--color-bluegreen: #519aba;
+		--color-silvermetallic: #adaeb3;
 	}
 
 	html,
@@ -100,6 +101,33 @@
 		padding: 0 8px 0 6px;
 	}
 
+	/* Sidebar Sizing */
+	.two ._191H_,
+	.two ._191H_ {
+		width: 100%;
+		max-width: 190px;
+		min-width: 190px;
+		flex: 2%;
+		transition: all 200ms ease-in-out;
+	}
+
+	/* Sidebar Header */
+	html[dir] ._1G3Wr {
+		padding: 10px 0;
+	}
+
+	._1X8rk {
+		padding-left: 15px;
+	}
+
+	html[dir=ltr] ._2BYrr {
+		margin-left: 8px
+	}
+
+	html[dir=ltr] ._2cNrC {
+		margin: 0;
+	}
+
 	/* Sidebar Search */
 	html[dir] ._1Jn3C {
 		background-color: var(--color-raisinblack);
@@ -124,28 +152,30 @@
 
 	/* Sidebar Name */
 	.zoWT4 {
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 500;
 	}
 
 	/* Sidebar Name Message Preview */
 	._1qB8f {
-		font-size: 14px;
+		font-size: 12px;
+		color: var(--color-silvermetallic);
 	}
 
 	/* Sidebar Time */
 	._1i_wG {
-		opacity: 0.25;
+		opacity: 1;
 	}
 
-	/* Sidebar Transitions */
-	.two ._191H_,
-	.two ._191H_ {
-		width: 100%;
-		max-width: 225px;
-		min-width: 225px;
-		flex: 2%;
-		transition: all 200ms ease-in-out;
+	._3vPI2 ._1i_wG {
+		color: var(--color-silvermetallic);
+		opacity: 0.5;
+	}
+
+	/* Sidebar Unread Marker */
+
+	html[dir] ._23LrM {
+		background-color: var(--color-celeste);
 	}
 
 	/* Main Chat */
@@ -257,6 +287,24 @@
 
 	html[dir] ._2VSMU {
 		background-color: var(--color-gunmetal);
+	}
+
+	/* Group info Panel */
+
+	html[dir] ._2mQtw, html[dir] ._2P1rL {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] .dark ._2P1rL {
+		margin-bottom: 0;
+	}
+
+	.s9fl9ege {
+		padding-bottom: 0;
+	}
+
+	html[dir] ._2QzJd {
+		background-color: var(--color-ebonyclay);
 	}
 
 	@media screen and (min-width: 768px) {

@@ -11,7 +11,7 @@
 		--color-white: #fff;
 		--color-raisinblack: #232834;
 		--color-charcoal: #434957;
-		--color-gunmetal: #282c34;
+		--color-gunmetal: #282d3a;
 		--color-cyclamen: #f06897;
 		--color-ebonyclay: #1f2430;
 		--color-timberwolf: #cbccc6;
@@ -30,8 +30,8 @@
 
 	/* Scrollbar */
 	::-webkit-scrollbar {
-		width: 8px !important;
-		height: 8px!important;
+		width: 0px !important;
+		height: 0px!important;
 	}
 
 	html[dir] .dark ::-webkit-scrollbar-thumb {
@@ -77,28 +77,22 @@
 		color: #fff
 	}
 
-	/* Sidebar */
+	/*
+	*****************************
+	* Sidebar
+	*****************************
+	*/
 	/* Sidebar Background */
 	html[dir] ._2nY6U._2_TVt,
 	html[dir] ._2nY6U,
 	html[dir] ._2nY6U._1frFQ,
 	html[dir] ._1G3Wr,
 	html[dir] .dark ._3yWey {
-		background-color: var(--color-ebonyclay);
-	}
-
-	html[dir] body.dark #app {
-		opacity: 0.2;
-		opacity: 1;
-		transition: all 100ms ease-in-out;
-	}
-
-	html[dir] body.dark:hover > #app {
-		opacity: 1;
+		background-color: var(--color-raisinblack);
 	}
 
 	html[dir=ltr] .HONz8 {
-		padding: 0 8px 0 6px;
+		padding: 0 8px 0 10px;
 	}
 
 	/* Sidebar Sizing */
@@ -116,6 +110,8 @@
 		padding: 10px 0;
 	}
 
+
+	/* Sidebar Header Avatar */
 	._1X8rk {
 		padding-left: 15px;
 	}
@@ -124,6 +120,7 @@
 		margin-left: 8px
 	}
 
+	/* Sidebar Header Icons */
 	html[dir=ltr] ._2cNrC {
 		margin: 0;
 	}
@@ -135,6 +132,35 @@
 
 	html[dir=ltr] ._3Qnsr {
 		left: 50px;
+	}
+
+	/* Sidebar Container */
+	html[dir] ._3OvU8,
+	html[dir] ._2EU3r {
+		border-top: 1px solid var(--color-raisinblack);
+		border-bottom: 1px solid var(--color-raisinblack);
+	}
+
+	html[dir] ._3m_Xw {
+		z-index: 1000 !important;
+	}
+
+	html[dir] ._3m_Xw div {
+		transition: all 400ms ease-in-out;
+	}
+
+	html[dir] ._3m_Xw [aria-selected="true"] > div > div {
+		background-color: var(--color-gunmetal);
+		border-top: 1px solid var(--color-charcoal);
+		border-bottom: 1px solid var(--color-charcoal);
+	}
+
+	html[dir] ._3m_Xw [aria-selected="true"] > div {
+		box-shadow: 0px 4px 12px 0 rgb(0 0 0 / 40%);
+	}
+
+	html[dir] ._2nY6U._2_TVt ._3OvU8 {
+		border-top-color: var(--color-charcoal);
 	}
 
 	/* Sidebar Profile Photo */
@@ -153,7 +179,8 @@
 	/* Sidebar Name */
 	.zoWT4 {
 		font-size: 14px;
-		font-weight: 500;
+		font-weight: 670;
+		color: var(--color-white);
 	}
 
 	/* Sidebar Name Message Preview */
@@ -174,10 +201,14 @@
 
 	/* Sidebar Unread Marker */
 	html[dir] ._23LrM {
-		background-color: var(--color-celeste);
+		background-color: var(--color-cyclamen);
 	}
 
-	/* Main Chat */
+	/*
+	*****************************
+	* Main Chat
+	*****************************
+	*/
 	.two ._3sh5K {
 		flex: 100%;
 		padding-right: 30px;
@@ -185,17 +216,17 @@
 
 	[data-asset-chat-background-dark] {
 		background-image: none;
-		background-color: #282c34;
+		background-color: var(--color-gunmetal);
 	}
 
 	/* Main Chat Background */
 	.y8WcF {
-		background: var(--color-raisinblack);
+		background: var(--color-gunmetal);
 	}
 
 	/* Unread Bar*/
 	html[dir] ._5ML0C {
-		background: var(--color-raisinblack);
+		background: var(--color-gunmetal);
 	}
 
 	html[dir] ._3cOAM {
@@ -325,7 +356,11 @@
 		background-color: var(--color-cyclamen);
 	}
 
-
+	/*
+	*****************************
+	* Responsive
+	*****************************
+	*/
 	@media screen and (min-width: 768px) {
 		/* Sidebar */
 		.two ._191H_,

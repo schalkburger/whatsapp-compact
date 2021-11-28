@@ -211,7 +211,6 @@
 	*/
 	.two ._3sh5K {
 		flex: 100%;
-		padding-right: 30px;
 	}
 
 	[data-asset-chat-background-dark] {

@@ -95,6 +95,26 @@
 		padding: 0 8px 0 10px;
 	}
 
+	/* Sidebar Profile */
+
+	.KPJpj {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] ._1Mc0y {
+		background-color: var(--color-raisinblack);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+
+	html[dir=ltr] ._2LTDQ {
+		background-color: var(--color-raisinblack);
+		margin: 0;
+		padding: 28px 20px 28px 30px;
+	}
+
 	/* Sidebar Sizing */
 	.two ._191H_,
 	.two ._191H_ {
@@ -167,7 +187,7 @@
 	html[dir] ._3GlyB {
 		width: 30px !important;
 		height: 30px !important;
-		filter: grayscale(1) contrast(1.5);
+		/* filter: grayscale(1) contrast(1.5); */
 	}
 
 	/* Sidebar Name Container */
@@ -202,6 +222,20 @@
 	/* Sidebar Unread Marker */
 	html[dir] ._23LrM {
 		background-color: var(--color-cyclamen);
+	}
+
+	/* Status */
+
+	html[dir] ._2HUCB {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir=ltr] ._2v5gS {
+		background-color: var(--color-charcoal);
+	}
+
+	html[dir] ._3Hudz {
+		background-color: var(--color-raisinblack);
 	}
 
 	/*
@@ -380,7 +414,7 @@
 	@media screen and (min-width: 1441px) {
 
 		html[dir] body.dark {
-			background-color: var(--color-gunmetal);
+			background-color: var(--color-raisinblack);
 		}
 
 		/* Sidebar */

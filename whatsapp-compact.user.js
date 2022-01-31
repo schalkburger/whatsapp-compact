@@ -6,7 +6,6 @@
 @author         Schalk Burger
 ==/UserStyle== */
 @-moz-document domain("web.whatsapp.com") {
-
 	:root {
 		--color-white: #fff;
 		--color-raisinblack: #232834;
@@ -31,7 +30,7 @@
 	/* Scrollbar */
 	::-webkit-scrollbar {
 		width: 0px !important;
-		height: 0px!important;
+		height: 0px !important;
 	}
 
 	html[dir] .dark ::-webkit-scrollbar-thumb {
@@ -40,6 +39,12 @@
 
 	html[dir] .dark ::-webkit-scrollbar-track {
 		background-color: var(--color-raisinblack);
+	}
+
+	@media screen and (max-width: 748px) {
+		._1XkO3 {
+			min-width: 660px;
+		}
 	}
 
 	/* App Wrapper */
@@ -74,7 +79,7 @@
 
 	._3K42l,
 	._1ec6v {
-		color: #fff
+		color: #fff;
 	}
 
 	/*
@@ -82,6 +87,14 @@
 	* Sidebar
 	*****************************
 	*/
+	/* Sidebar Size */
+	@media screen and (max-width: 900px) {
+		.two ._2i3T7 {
+			padding-left: 0px;
+		}
+	}
+
+
 	/* Sidebar Background */
 	html[dir] ._2nY6U._2_TVt,
 	html[dir] ._2nY6U,
@@ -91,12 +104,11 @@
 		background-color: var(--color-raisinblack);
 	}
 
-	html[dir=ltr] .HONz8 {
+	html[dir="ltr"] .HONz8 {
 		padding: 0 8px 0 10px;
 	}
 
 	/* Sidebar Profile */
-
 	.KPJpj {
 		background-color: var(--color-raisinblack);
 	}
@@ -109,7 +121,7 @@
 		padding-bottom: 28px;
 	}
 
-	html[dir=ltr] ._2LTDQ {
+	html[dir="ltr"] ._2LTDQ {
 		background-color: var(--color-raisinblack);
 		margin: 0;
 		padding: 28px 20px 28px 30px;
@@ -127,21 +139,20 @@
 
 	/* Sidebar Header */
 	html[dir] ._1G3Wr {
-		padding: 10px 0;
+		padding: 10px 0 10px 20px;
 	}
-
 
 	/* Sidebar Header Avatar */
 	._1X8rk {
-		padding-left: 15px;
+		padding-left: 5px;
 	}
 
-	html[dir=ltr] ._2BYrr {
-		margin-left: 8px
+	html[dir="ltr"] ._2BYrr {
+		margin-left: 8px;
 	}
 
 	/* Sidebar Header Icons */
-	html[dir=ltr] ._2cNrC {
+	html[dir="ltr"] ._2cNrC {
 		margin: 0;
 	}
 
@@ -150,7 +161,7 @@
 		background-color: var(--color-raisinblack);
 	}
 
-	html[dir=ltr] ._3Qnsr {
+	html[dir="ltr"] ._3Qnsr {
 		left: 50px;
 	}
 
@@ -159,6 +170,10 @@
 	html[dir] ._2EU3r {
 		border-top: 1px solid var(--color-raisinblack);
 		border-bottom: 1px solid var(--color-raisinblack);
+	}
+
+	html[dir] ._2EU3r {
+		padding-left: 5px;
 	}
 
 	html[dir] ._3m_Xw {
@@ -225,12 +240,11 @@
 	}
 
 	/* Status */
-
 	html[dir] ._2HUCB {
 		background-color: var(--color-raisinblack);
 	}
 
-	html[dir=ltr] ._2v5gS {
+	html[dir="ltr"] ._2v5gS {
 		background-color: var(--color-charcoal);
 	}
 
@@ -243,6 +257,19 @@
 	* Main Chat
 	*****************************
 	*/
+	/* Main Chat Padding Right */
+	html[dir="ltr"] .y8WcF {
+		padding-right: 40px;
+	}
+
+	html[dir="ltr"] ._27Uai {
+		right: 50px;
+	}
+
+	._1Ae7k {
+		width: 85px;
+	}
+
 	.two ._3sh5K {
 		flex: 100%;
 	}
@@ -279,7 +306,7 @@
 		background-color: var(--color-charcoal);
 	}
 
-	html[dir=ltr] ._18oGY._2copG {
+	html[dir="ltr"] ._18oGY._2copG {
 		background: var(--color-charcoal);
 	}
 
@@ -288,7 +315,7 @@
 		background-color: var(--color-charcoal);
 	}
 
-	html[dir=ltr] ._18oGY._1UyGr {
+	html[dir="ltr"] ._18oGY._1UyGr {
 		background: var(--color-raisinblack);
 	}
 
@@ -328,7 +355,7 @@
 	}
 
 	/* Share Panel */
-	html[dir=ltr] ._1Mcu- {
+	html[dir="ltr"] ._1Mcu- {
 		background-color: var(--color-raisinblack);
 	}
 
@@ -405,14 +432,12 @@
 			transition: all 200ms ease-in-out;
 		}
 
-
-		html[dir=ltr] .HONz8 {
+		html[dir="ltr"] .HONz8 {
 			padding: 0 12px 0 12px;
 		}
 	}
 
 	@media screen and (min-width: 1441px) {
-
 		html[dir] body.dark {
 			background-color: var(--color-raisinblack);
 		}
@@ -428,11 +453,9 @@
 		}
 	}
 
-
 	@media screen and (max-width: 599px) {
-
 		html * {
-			background: rgba(0, 0, 0, 0.5)
+			background: rgba(0, 0, 0, 0.5);
 		}
 	}
 }

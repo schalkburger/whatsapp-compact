@@ -50,6 +50,13 @@
 	/* App Wrapper */
 	.app-wrapper-web {
 		overflow: hidden;
+		opacity: 0;
+		transition: all 200ms ease-in-out;
+	}
+
+
+	.app-wrapper-web:hover {
+		opacity: 1;
 	}
 
 	/* Global Backgrounds */
@@ -90,7 +97,7 @@
 	/* Sidebar Size */
 	@media screen and (max-width: 900px) {
 		.two ._2i3T7 {
-			padding-left: 0px;
+			padding-left: 0;
 		}
 	}
 

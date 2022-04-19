@@ -50,13 +50,16 @@
 	/* App Wrapper */
 	.app-wrapper-web {
 		overflow: hidden;
-		opacity: 0;
+		opacity: 1;
 		transition: all 200ms ease-in-out;
 	}
 
-
 	.app-wrapper-web:hover {
 		opacity: 1;
+	}
+
+	.hide-app {
+		opacity: 0;
 	}
 
 	/* Global Backgrounds */
@@ -265,6 +268,11 @@
 	*****************************
 	*/
 	/* Main Chat Padding Right */
+	#main {
+		padding-right: 40px;
+		background-color: #1d222e;
+	}
+
 	html[dir="ltr"] .y8WcF {
 		padding-right: 40px;
 	}
@@ -447,6 +455,16 @@
 	@media screen and (min-width: 1441px) {
 		html[dir] body.dark {
 			background-color: var(--color-raisinblack);
+		}
+
+		/* Main */
+		#main {
+			padding-right: 0;
+		}
+
+		html[dir] .app-wrapper-web ._1XkO3 {
+			margin: 0;
+			width: 100%;
 		}
 
 		/* Sidebar */

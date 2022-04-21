@@ -7,21 +7,27 @@
 ==/UserStyle== */
 @-moz-document domain("web.whatsapp.com") {
 	:root {
-		--color-white: #fff;
-		--color-raisinblack: #232834;
+		--color-bluegreen: #519aba;
+		--color-celeste: #9ef0f0;
 		--color-charcoal: #434957;
-		--color-gunmetal: #282d3a;
 		--color-cyclamen: #f06897;
 		--color-ebonyclay: #1f2430;
-		--color-timberwolf: #cbccc6;
-		--color-manatee: #8c94a3;
-		--color-celeste: #9ef0f0;
-		--color-lightskyblue: #73d0ff;
 		--color-frenchskyblue: #78a9ff;
-		--color-bluegreen: #519aba;
+		--color-gunmetal: #282d3a;
+		--color-lightskyblue: #73d0ff;
+		--color-manatee: #8c94a3;
+		--color-raisinblack: #232834;
+		--color-richblack: #0e121b;
 		--color-silvermetallic: #adaeb3;
+		--color-timberwolf: #cbccc6;
+		--color-white: #fff;
 	}
 
+	/*
+	*****************************
+	* Global
+	*****************************
+	*/
 	html,
 	body {
 		min-width: 600px;
@@ -58,22 +64,15 @@
 		opacity: 1;
 	}
 
-	.hide-app {
-		opacity: 0;
+	/* Backgrounds */
+	html[dir] body.dark, html[dir] ._1INL_ {
+		background-color: var(--color-richblack);
 	}
 
-	/* Global Backgrounds */
 	html[dir] ._23P3O,
 	html[dir="ltr"] ._2BU3P,
 	html[dir] .zaKsw {
 		background-color: var(--color-raisinblack);
-	}
-
-	/* Search Inputs */
-	html[dir] .p3_M1,
-	html[dir] ._1Jn3C {
-		background-color: var(--color-raisinblack);
-		border-color: #434957;
 	}
 
 	/* Icons */
@@ -104,13 +103,14 @@
 		}
 	}
 
-
 	/* Sidebar Background */
 	html[dir] ._2nY6U._2_TVt,
 	html[dir] ._2nY6U,
 	html[dir] ._2nY6U._1frFQ,
 	html[dir] ._1G3Wr,
-	html[dir] .dark ._3yWey {
+	html[dir] .dark ._3yWey,
+	html[dir] ._20c87,
+	html[dir] .YGe90 {
 		background-color: var(--color-raisinblack);
 	}
 
@@ -166,13 +166,25 @@
 		margin: 0;
 	}
 
-	/* Sidebar Search */
-	html[dir] ._1Jn3C {
-		background-color: var(--color-raisinblack);
-	}
-
 	html[dir="ltr"] ._3Qnsr {
 		left: 50px;
+	}
+
+	/* Search Inputs */
+	html[dir] .p3_M1,
+	html[dir] ._1Jn3C {
+		background-color: var(--color-ebonyclay);
+		border-color: #434957;
+	}
+
+	/* Search Icon */
+	html[dir=ltr] ._28-cz svg {
+		color: #fff;
+	}
+
+	/* Search Results */
+	.YGe90 {
+		color: var(--color-white);
 	}
 
 	/* Sidebar Container */
@@ -453,9 +465,6 @@
 	}
 
 	@media screen and (min-width: 1441px) {
-		html[dir] body.dark {
-			background-color: var(--color-raisinblack);
-		}
 
 		/* Main */
 		#main {
@@ -482,5 +491,27 @@
 		html * {
 			background: rgba(0, 0, 0, 0.5);
 		}
+	}
+
+	/*
+	*****************************
+	* WhatsApp Compact Script Utility Styles
+	*****************************
+	*/
+	/* Hide App */
+	#app.hide-app {
+		opacity: 0;
+	}
+
+	/* Centered Mode */
+	#app.center-app .app-wrapper-web ._1XkO3 {
+		max-width: 60vw;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	/* Hide Sidebar */
+	#app.hide-sidebar .ldL67._2i3T7 {
+		flex: 0;
 	}
 }

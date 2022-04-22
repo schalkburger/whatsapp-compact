@@ -33,7 +33,9 @@
 		min-width: 600px;
 	}
 
-	/* Scrollbar */
+	/*---------------------
+	 Scrollbar
+	---------------------*/
 	::-webkit-scrollbar {
 		width: 0px !important;
 		height: 0px !important;
@@ -53,7 +55,9 @@
 		}
 	}
 
-	/* App Wrapper */
+	/*---------------------
+	 App Wrapper
+	---------------------*/
 	.app-wrapper-web {
 		overflow: hidden;
 		opacity: 1;
@@ -64,7 +68,9 @@
 		opacity: 1;
 	}
 
-	/* Backgrounds */
+	/*---------------------
+	 Backgrounds
+	---------------------*/
 	html[dir] body.dark, html[dir] ._1INL_ {
 		background-color: var(--color-richblack);
 	}
@@ -75,12 +81,16 @@
 		background-color: var(--color-raisinblack);
 	}
 
-	/* Icons */
+	/*---------------------
+	 Icons
+	---------------------*/
 	._3u7yy {
 		color: #fff;
 	}
 
-	/* Buttons */
+	/*---------------------
+	 Buttons
+	---------------------*/
 	html[dir] ._1cQWN,
 	html[dir] ._1GLVO {
 		background-color: var(--color-frenchskyblue);
@@ -96,14 +106,19 @@
 	* Sidebar
 	*****************************
 	*/
-	/* Sidebar Size */
+
+	/*---------------------
+	 Sidebar Size
+	---------------------*/
 	@media screen and (max-width: 900px) {
 		.two ._2i3T7 {
 			padding-left: 0;
 		}
 	}
 
-	/* Sidebar Background */
+	/*---------------------
+	 Sidebar Background
+	---------------------*/
 	html[dir] ._2nY6U._2_TVt,
 	html[dir] ._2nY6U,
 	html[dir] ._2nY6U._1frFQ,
@@ -118,7 +133,9 @@
 		padding: 0 8px 0 10px;
 	}
 
-	/* Sidebar Profile */
+	/*---------------------
+	 Sidebar Profile
+	---------------------*/
 	.KPJpj {
 		background-color: var(--color-raisinblack);
 	}
@@ -137,7 +154,9 @@
 		padding: 28px 20px 28px 30px;
 	}
 
-	/* Sidebar Sizing */
+	/*---------------------
+	 Sidebar Sizing
+	---------------------*/
 	.two ._191H_,
 	.two ._191H_ {
 		width: 100%;
@@ -147,12 +166,16 @@
 		transition: all 200ms ease-in-out;
 	}
 
-	/* Sidebar Header */
+	/*---------------------
+	 Sidebar Header
+	---------------------*/
 	html[dir] ._1G3Wr {
 		padding: 10px 0 10px 20px;
 	}
 
-	/* Sidebar Header Avatar */
+	/*---------------------
+	 Sidebar Header Avatar
+	---------------------*/
 	._1X8rk {
 		padding-left: 5px;
 	}
@@ -161,7 +184,9 @@
 		margin-left: 8px;
 	}
 
-	/* Sidebar Header Icons */
+	/*---------------------
+	 Siuebar Header Icons
+	---------------------*/
 	html[dir="ltr"] ._2cNrC {
 		margin: 0;
 	}
@@ -170,24 +195,32 @@
 		left: 50px;
 	}
 
-	/* Search Inputs */
+	/*---------------------
+	 Search Inputs
+	---------------------*/
 	html[dir] .p3_M1,
 	html[dir] ._1Jn3C {
 		background-color: var(--color-ebonyclay);
 		border-color: #434957;
 	}
 
-	/* Search Icon */
+	/*---------------------
+	 Search Icon
+	---------------------*/
 	html[dir=ltr] ._28-cz svg {
 		color: #fff;
 	}
 
-	/* Search Results */
+	/*---------------------
+	 Search Results
+	---------------------*/
 	.YGe90 {
 		color: var(--color-white);
 	}
 
-	/* Sidebar Container */
+	/*---------------------
+	 Sidebar Container
+	---------------------*/
 	html[dir] ._3OvU8,
 	html[dir] ._2EU3r {
 		border-top: 1px solid var(--color-raisinblack);
@@ -220,33 +253,43 @@
 		border-top-color: var(--color-charcoal);
 	}
 
-	/* Sidebar Profile Photo */
+	/*---------------------
+	 Sidebar Profile Photo
+	---------------------*/
 	html[dir] ._3GlyB {
 		width: 30px !important;
 		height: 30px !important;
 		/* filter: grayscale(1) contrast(1.5); */
 	}
 
-	/* Sidebar Name Container */
+	/*---------------------
+	 Sidebar Name Container
+	---------------------*/
 	html[dir] ._2nY6U:focus,
 	html[dir] ._2nY6U:hover {
 		background-color: var(--color-charcoal);
 	}
 
-	/* Sidebar Name */
+	/*---------------------
+	 Sidebar Name
+	---------------------*/
 	.zoWT4 {
 		font-size: 14px;
 		font-weight: 670;
 		color: var(--color-white);
 	}
 
-	/* Sidebar Name Message Preview */
+	/*---------------------
+	 Sidebar Name Message Preview
+	---------------------*/
 	._1qB8f {
 		font-size: 12px;
 		color: var(--color-silvermetallic);
 	}
 
-	/* Sidebar Time */
+	/*---------------------
+	 Sidebar Time
+	---------------------*/
 	._1i_wG {
 		opacity: 1;
 	}
@@ -256,12 +299,16 @@
 		opacity: 0.5;
 	}
 
-	/* Sidebar Unread Marker */
+	/*---------------------
+	 Sidebar Unread Marker
+	---------------------*/
 	html[dir] ._23LrM {
 		background-color: var(--color-cyclamen);
 	}
 
-	/* Status */
+	/*---------------------
+	 Status
+	---------------------*/
 	html[dir] ._2HUCB {
 		background-color: var(--color-raisinblack);
 	}
@@ -279,7 +326,10 @@
 	* Main Chat
 	*****************************
 	*/
-	/* Main Chat Padding Right */
+
+	/*---------------------
+	 Main Chat Padding Right
+	---------------------*/
 	#main {
 		padding-right: 40px;
 		background-color: #1d222e;
@@ -306,12 +356,16 @@
 		background-color: var(--color-gunmetal);
 	}
 
-	/* Main Chat Background */
+	/*---------------------
+	 Main Chat Background
+	---------------------*/
 	.y8WcF {
 		background: var(--color-gunmetal);
 	}
 
-	/* Unread Bar*/
+	/*---------------------
+	 Unread Bar
+	---------------------*/
 	html[dir] ._5ML0C {
 		background: var(--color-gunmetal);
 	}
@@ -320,7 +374,9 @@
 		background-color: var(--color-cyclamen);
 	}
 
-	/* Message Out */
+	/*---------------------
+	 Message Out
+	---------------------*/
 	html[dir] .message-out .Nm1g1 {
 		background-color: var(--color-raisinblack);
 	}
@@ -337,7 +393,9 @@
 		background: var(--color-charcoal);
 	}
 
-	/* Message In */
+	/*---------------------
+	 Message In
+	---------------------*/
 	html[dir] .message-in .Nm1g1 {
 		background-color: var(--color-charcoal);
 	}
@@ -354,12 +412,16 @@
 		background-color: var(--color-raisinblack);
 	}
 
-	/* Reply Dialog */
+	/*---------------------
+	 Reply Dialog
+	---------------------*/
 	html[dir] .a-HbF {
 		background-color: var(--color-raisinblack);
 	}
 
-	/* Reply Close Icon */
+	/*---------------------
+	 Reply Close Icon
+	---------------------*/
 	html[dir] ._1Hccy {
 		background-color: transparent;
 	}
@@ -372,7 +434,9 @@
 		background-color: var(--color-white) !important;
 	}
 
-	/* Menu Popover */
+	/*---------------------
+	 Menu Popover
+	---------------------*/
 	html[dir] .o--vV {
 		background-color: var(--color-raisinblack);
 	}
@@ -381,7 +445,9 @@
 		background-color: var(--color-charcoal);
 	}
 
-	/* Share Panel */
+	/*---------------------
+	 Share Panel
+	---------------------*/
 	html[dir="ltr"] ._1Mcu- {
 		background-color: var(--color-raisinblack);
 	}
@@ -398,15 +464,19 @@
 		background-color: var(--color-charcoal);
 	}
 
-	/* System Message */
+	/*---------------------
+	 System Message
+	---------------------*/
 	html[dir] .EtBAv {
 		background-color: var(--color-charcoal);
 	}
 
-	/* Rich Text Emoji Panel */
+	/*---------------------
+	 Rich Text Emoji Panel
+	---------------------*/
 	html[dir] ._1TdPb,
 	html[dir] ._10mnt,
-	html[dir] ._16kef {
+	html[dir] ._16kef, html[dir] ._1rtUb {
 		background-color: var(--color-raisinblack);
 	}
 
@@ -414,7 +484,9 @@
 		background-color: var(--color-gunmetal);
 	}
 
-	/* Group Info Panel */
+	/*---------------------
+	 Group Info Panel
+	---------------------*/
 	html[dir] ._2mQtw,
 	html[dir] ._2P1rL {
 		background-color: var(--color-raisinblack);
@@ -432,7 +504,9 @@
 		background-color: var(--color-ebonyclay);
 	}
 
-	/* Group Media Panel */
+	/*---------------------
+	 Group Media Panel
+	---------------------*/
 	html[dir] ._1PGhQ,
 	html[dir] ._3CC5A,
 	html[dir] ._1MulP {
@@ -498,19 +572,25 @@
 	* WhatsApp Compact Script Utility Styles
 	*****************************
 	*/
-	/* Hide App */
+	/*---------------------
+	 Hide App
+	---------------------*/
 	#app.hide-app {
 		opacity: 0;
 	}
 
-	/* Centered Mode */
+	/*---------------------
+	 Centered Mode
+	---------------------*/
 	#app.center-app .app-wrapper-web ._1XkO3 {
 		max-width: 60vw;
 		margin: 0 auto;
 		position: relative;
 	}
 
-	/* Hide Sidebar */
+	/*---------------------
+	 Hide Sidebar
+	---------------------*/
 	#app.hide-sidebar .ldL67._2i3T7 {
 		flex: 0;
 	}

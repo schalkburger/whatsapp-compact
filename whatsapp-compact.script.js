@@ -30,8 +30,7 @@ function setFavicon() {
     link.rel = "icon";
     document.getElementsByTagName("head")[0].appendChild(link);
   }
-  link.href =
-    "https://web.whatsapp.com/img/f02_c83a3786caa656cdcea06396bbc6c1fc.png";
+  link.href = "https://i.imgur.com/FbQEFY1.png";
   //   link.setAttribute("href", "https://i.imgur.com/FbQEFY1.png");
 }
 
@@ -51,10 +50,7 @@ function removeHideAppClass() {
   var element = document.getElementById("app");
   element.classList.remove("hide-app");
   var link = document.querySelector("link[rel~='icon']");
-  link.setAttribute(
-    "href",
-    "https://web.whatsapp.com/img/f02_c83a3786caa656cdcea06396bbc6c1fc.png"
-  );
+  link.setAttribute("href", "https://i.imgur.com/FbQEFY1.png");
 }
 
 document.onkeyup = function (e) {
@@ -65,6 +61,8 @@ document.onkeyup = function (e) {
     toggleCenterApp();
   } else if (e.altKey && e.which == 83) {
     toggleHideSidebar();
+  } else {
+    setFavicon();
   }
 };
 

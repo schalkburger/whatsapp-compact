@@ -71,7 +71,7 @@
 	/*---------------------
 	 Backgrounds
 	---------------------*/
-	html[dir] body.dark, html[dir] ._1INL_ {
+	html[dir] body.dark, html[dir] ._1INL_, #initial_startup {
 		background-color: var(--color-richblack);
 	}
 
@@ -564,9 +564,6 @@
 			margin: 0 auto;
 			width: 100%;
 			max-width: 60vw;
-			position: relative;
-			top: 0;
-			height: 100%;
 		}
 
 		/* Sidebar */
@@ -612,6 +609,9 @@
 	#app.full-width-app .app-wrapper-web ._1XkO3 {
 		max-width: 100vw;
 		margin: 0 auto;
+		position: relative;
+		top: 0;
+		height: 100%;
 	}
 
 	/*---------------------

@@ -18,6 +18,11 @@ function toggleCenterApp() {
   element.classList.toggle("center-app");
 }
 
+function toggleFullWidthApp() {
+  var element = document.getElementById("app");
+  element.classList.toggle("full-width-app");
+}
+
 function toggleHideSidebar() {
   var element = document.getElementById("app");
   element.classList.toggle("hide-sidebar");
@@ -56,9 +61,8 @@ function removeHideAppClass() {
 document.onkeyup = function (e) {
   if (e.altKey && e.which == 72) {
     toggleHideApp();
-    hideFavicon();
   } else if (e.altKey && e.which == 67) {
-    toggleCenterApp();
+    toggleFullWidthApp();
   } else if (e.altKey && e.which == 83) {
     toggleHideSidebar();
   } else {
@@ -70,9 +74,9 @@ window.addEventListener("click", function (event) {
   removeHideAppClass();
 });
 
-// window.addEventListener("keyup", function (event) {
-//   removeHideAppClass();
-// });
+window.addEventListener("keyup", function (event) {
+  setFavicon();
+});
 
 window.addEventListener("load", (event) => {
   console.log("WhatsApp Compact Loaded");

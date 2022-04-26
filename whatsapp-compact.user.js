@@ -51,7 +51,7 @@
 
 	@media screen and (max-width: 748px) {
 		._1XkO3 {
-			min-width: 660px;
+			min-width: 500px;
 		}
 	}
 
@@ -81,6 +81,14 @@
 		background-color: var(--color-raisinblack);
 	}
 
+	html[dir] ._26aja:after {
+		background: transparent;
+	}
+
+	html[dir] progress._35Zb2[value]::-webkit-progress-bar {
+		background-color: #434957;
+	}
+
 	/*---------------------
 	 Icons
 	---------------------*/
@@ -99,6 +107,13 @@
 	._3K42l,
 	._1ec6v {
 		color: #fff;
+	}
+
+	/*---------------------
+	 Borders
+	---------------------*/
+	html[dir] .zaKsw:after {
+		border-color: var(--color-charcoal);
 	}
 
 	/*
@@ -546,8 +561,12 @@
 		}
 
 		html[dir] .app-wrapper-web ._1XkO3 {
-			margin: 0;
+			margin: 0 auto;
 			width: 100%;
+			max-width: 60vw;
+			position: relative;
+			top: 0;
+			height: 100%;
 		}
 
 		/* Sidebar */
@@ -561,11 +580,11 @@
 		}
 	}
 
-	@media screen and (max-width: 599px) {
+	/* @media screen and (max-width: 599px) {
 		html * {
 			background: rgba(0, 0, 0, 0.5);
 		}
-	}
+	} */
 
 	/*
 	*****************************
@@ -580,12 +599,19 @@
 	}
 
 	/*---------------------
-	 Centered Mode
+	 Compact Mode
 	---------------------*/
 	#app.center-app .app-wrapper-web ._1XkO3 {
 		max-width: 60vw;
 		margin: 0 auto;
-		position: relative;
+	}
+
+	/*---------------------
+	 Full Width Mode
+	---------------------*/
+	#app.full-width-app .app-wrapper-web ._1XkO3 {
+		max-width: 100vw;
+		margin: 0 auto;
 	}
 
 	/*---------------------

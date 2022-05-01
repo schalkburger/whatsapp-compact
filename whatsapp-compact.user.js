@@ -434,6 +434,10 @@
 		background-color: var(--color-raisinblack);
 	}
 
+	html[dir] ._3XUNQ {
+		background-color: var(--color-ebonyclay);
+	}
+
 	/*---------------------
 	 Reply Close Icon
 	---------------------*/

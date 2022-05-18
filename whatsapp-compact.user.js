@@ -17,6 +17,7 @@
 		--color-lightskyblue: #73d0ff;
 		--color-manatee: #8c94a3;
 		--color-raisinblack: #232834;
+		--color-raisinblackhalf: rgba(35, 40, 52, 0.80);
 		--color-richblack: #0e121b;
 		--color-silvermetallic: #adaeb3;
 		--color-timberwolf: #cbccc6;
@@ -535,6 +536,19 @@
 	html[dir] ._3CC5A:before {
 		background-color: var(--color-cyclamen);
 	}
+
+	/*---------------------
+	 Media Viewer
+	---------------------*/
+
+	html[dir] ._1w-Ol {
+		background-color: var(--color-raisinblack);
+	}
+
+	html[dir] ._3IBSU {
+		background-color: var(--color-raisinblackhalf);
+	}
+
 
 	/*
 	*****************************

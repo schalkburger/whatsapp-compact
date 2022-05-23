@@ -72,7 +72,9 @@
 	/*---------------------
 	 Backgrounds
 	---------------------*/
-	html[dir] body.dark, html[dir] ._1INL_, #initial_startup {
+	html[dir] body.dark,
+	html[dir] ._1INL_,
+	#initial_startup {
 		background-color: var(--color-richblack);
 	}
 
@@ -122,7 +124,6 @@
 	* Sidebar
 	*****************************
 	*/
-
 	/*---------------------
 	 Sidebar Size
 	---------------------*/
@@ -215,7 +216,8 @@
 	 Search Inputs
 	---------------------*/
 	html[dir] .p3_M1,
-	html[dir] ._1Jn3C {
+	html[dir] ._1Jn3C,
+	html[dir] ._16C8p {
 		background-color: var(--color-ebonyclay);
 		border-color: #434957;
 	}
@@ -342,7 +344,6 @@
 	* Main Chat
 	*****************************
 	*/
-
 	/*---------------------
 	 Main Chat Padding Right
 	---------------------*/
@@ -496,7 +497,8 @@
 	---------------------*/
 	html[dir] ._1TdPb,
 	html[dir] ._10mnt,
-	html[dir] ._16kef, html[dir] ._1rtUb {
+	html[dir] ._16kef,
+	html[dir] ._1rtUb {
 		background-color: var(--color-raisinblack);
 	}
 
@@ -540,7 +542,6 @@
 	/*---------------------
 	 Media Viewer
 	---------------------*/
-
 	html[dir] ._1w-Ol {
 		background-color: var(--color-raisinblack);
 	}
@@ -600,7 +601,6 @@
 			background: rgba(0, 0, 0, 0.5);
 		}
 	} */
-
 	/*
 	*****************************
 	* WhatsApp Compact Script Utility Styles

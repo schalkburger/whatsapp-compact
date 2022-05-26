@@ -11,6 +11,16 @@
 function toggleHideApp() {
   var element = document.getElementById("app");
   element.classList.toggle("hide-app");
+  // var link = document.querySelector("link[rel~='icon']");
+  // link.setAttribute("href", "https://i.imgur.com/LHUHDjG.png");
+  var link = document.querySelector("link[rel~='icon']");
+  if (link) {
+    link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "https://i.imgur.com/LHUHDjG.png";
+    link.classList.toggle("blank-favicon");
+    document.getElementsByTagName("head")[0].appendChild(link);
+  }
 }
 
 function toggleCenterApp() {
@@ -36,7 +46,6 @@ function setFavicon() {
     document.getElementsByTagName("head")[0].appendChild(link);
   }
   link.href = "https://i.imgur.com/FbQEFY1.png";
-  //   link.setAttribute("href", "https://i.imgur.com/FbQEFY1.png");
 }
 
 function hideFavicon() {
@@ -47,7 +56,6 @@ function hideFavicon() {
     link.rel = "icon";
     document.getElementsByTagName("head")[0].appendChild(link);
   }
-  //   link.href = "https://i.imgur.com/ZUOBx8F.png";
   link.setAttribute("href", "https://i.imgur.com/LHUHDjG.png");
 }
 
@@ -56,6 +64,8 @@ function removeHideAppClass() {
   element.classList.remove("hide-app");
   var link = document.querySelector("link[rel~='icon']");
   link.setAttribute("href", "https://i.imgur.com/FbQEFY1.png");
+  var hiddenFaviconLink = document.querySelector("link[class*='blank']");
+  hiddenFaviconLink.remove();
 }
 
 document.onkeyup = function (e) {
@@ -65,8 +75,6 @@ document.onkeyup = function (e) {
     toggleFullWidthApp();
   } else if (e.altKey && e.which == 83) {
     toggleHideSidebar();
-  } else {
-    setFavicon();
   }
 };
 
@@ -74,10 +82,8 @@ window.addEventListener("click", function (event) {
   removeHideAppClass();
 });
 
-window.addEventListener("keyup", function (event) {
-  setFavicon();
-});
-
 window.addEventListener("load", (event) => {
   console.log("WhatsApp Compact Loaded");
+  var link = document.querySelector("link[rel~='icon']");
+  link.setAttribute("href", "https://i.imgur.com/FbQEFY1.png");
 });

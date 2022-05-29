@@ -11,16 +11,6 @@
 function toggleHideApp() {
   var element = document.getElementById("app");
   element.classList.toggle("hide-app");
-  // var link = document.querySelector("link[rel~='icon']");
-  // link.setAttribute("href", "https://i.imgur.com/LHUHDjG.png");
-  var link = document.querySelector("link[rel~='icon']");
-  if (link) {
-    link = document.createElement("link");
-    link.rel = "icon";
-    link.href = "https://i.imgur.com/LHUHDjG.png";
-    link.classList.toggle("blank-favicon");
-    document.getElementsByTagName("head")[0].appendChild(link);
-  }
 }
 
 function toggleCenterApp() {
@@ -71,18 +61,24 @@ function removeHideAppClass() {
 document.onkeyup = function (e) {
   if (e.altKey && e.which == 72) {
     toggleHideApp();
-  } else if (e.altKey && e.which == 67) {
+  } else if (e.altKey && e.which == 87) {
     toggleFullWidthApp();
-  } else if (e.altKey && e.which == 83) {
+  } else if (e.altKey && e.which == 67) {
     toggleHideSidebar();
+  } else {
+    setFavicon();
   }
 };
 
-window.addEventListener("click", function (event) {
+setInterval(function () {
+  setFavicon();
+}, 2000);
+
+window.addEventListener("click", function () {
   removeHideAppClass();
 });
 
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
   console.log("WhatsApp Compact Loaded");
   var link = document.querySelector("link[rel~='icon']");
   link.setAttribute("href", "https://i.imgur.com/FbQEFY1.png");
